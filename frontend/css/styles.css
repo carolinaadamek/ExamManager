@@ -1,0 +1,10 @@
+body { font-family: system-ui, Arial; margin: 2rem; background: #0b0b0b; color: #eee; }
+main { max-width: 900px; margin: auto; }
+h1 { margin-bottom: 1rem; }
+.card { background: #141414; padding: 1rem; border-radius: 12px; margin-bottom: 1rem; }
+label { display: block; margin: .5rem 0; }
+textarea, select, input[type=text], input[type=search], .opt { width: 100%; padding: .6rem; }
+.options > div { display: flex; align-items: center; gap: .8rem; margin:.3rem 0; }
+button { padding: .6rem 1rem; }
+.q { padding: .5rem 0; border-bottom: 1px solid #222; }
+.badge { font-size: .8rem; padding: .2rem .5rem; border-radius: 6px; background:#222; }

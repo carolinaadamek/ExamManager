@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>ExamManager</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <main>
+    <h1>Prüfungsfragen verwalten</h1>
+
+    <section class="card">
+      <h2>Frage hinzufügen</h2>
+      <form id="qForm">
+        <label>Fach
+          <select id="subject"></select>
+        </label>
+
+        <label>Schwierigkeitsgrad
+          <select id="difficulty">
+            <option value="easy">Leicht</option>
+            <option value="medium">Mittel</option>
+            <option value="hard">Schwer</option>
+          </select>
+        </label>
+
+        <label>Fragetext
+          <textarea id="qtext" required></textarea>
+        </label>
+
+        <div class="options">
+          <div><input placeholder="Option A" class="opt" required /><label><input type="radio" name="correct" value="0" required> korrekt</label></div>
+          <div><input placeholder="Option B" class="opt" required /><label><input type="radio" name="correct" value="1"> korrekt</label></div>
+          <div><input placeholder="Option C" class="opt" required /><label><input type="radio" name="correct" value="2"> korrekt</label></div>
+          <div><input placeholder="Option D" class="opt" required /><label><input type="radio" name="correct" value="3"> korrekt</label></div>
+        </div>
+
+        <button>Speichern</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Fragen im Fach</h2>
+      <div id="questionList"></div>
+    </section>
+  </main>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
